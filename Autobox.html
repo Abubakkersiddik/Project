@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto-box</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Enter Height</th>
+        <td><input type="number" id="height"/></td>
+    </tr>
+    <tr>
+        <th>Enter Width</th>
+        <td><input type="number" id="width"/></td>
+    </tr>
+    <tr>
+        <th>Enter Background-color</th>
+        <td><input type="color" id="color"/></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><input type="button" id="btn" value="submit"/></td>
+    </tr>
+</table><hr/>
+<div id="newdiv"></div>
+<script>
+    var sbtn = document.getElementById('btn');
+    sbtn.onclick = function () {
+        var height = document.getElementById('height').value;
+        var width = document.getElementById('width').value;
+        var color = document.getElementById('color').value;
+
+        var newDiv = document.getElementById('newdiv');
+        newDiv.style.height = height+'px';
+        newDiv.style.width = width+'px';
+        newDiv.style.backgroundColor = color;
+
+    }
+
+    
+</script>
+
+</body>
+</html>

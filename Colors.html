@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Color</title>
+
+    <style>
+        .div-one{
+             height: 300px;
+            width: 350px;
+            border: 1px solid gray;
+        }
+        .red{
+            background-color: red;
+            border-radius: 50%;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{background-color: blue;}
+        .default{
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <button type="button" id="red">Red</button>
+        <button type="button" id="green">Green</button>
+        <button type="button" id="blue">Blue</button>
+        <button type="button" id="default">Default</button>
+        <div class="div-one" id="divOne"></div>
+    </div>
+<script>
+    var btnRed= document.getElementById('red');
+
+    btnRed.onclick = function () {
+        var divOne = document.getElementById('divOne');
+//        alert(divOne);
+//        divOne.style.backgroundColor ='red';
+        divOne.className = 'div-one red';
+    };
+    var btnGreen= document.getElementById('green');
+    btnGreen.onclick = function () {
+        var divOne = document.getElementById('divOne');
+//        divOne.style.backgroundColor ='green';
+        divOne.className = 'div-one green';
+    };
+
+    var btnBlue= document.getElementById('blue');
+    btnBlue.onclick = function () {
+        var divOne = document.getElementById('divOne');
+//        divOne.style.backgroundColor ='blue';
+        divOne.className = 'div-one blue';
+    };
+    var btnDefault= document.getElementById('default');
+    btnDefault.onclick = function () {
+        var divOne = document.getElementById('divOne');
+//        divOne.style.backgroundColor ='white';
+        divOne.className = 'div-one default';
+    };
+
+</script>
+
+</body>
+</html>

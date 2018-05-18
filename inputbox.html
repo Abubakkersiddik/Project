@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input-box</title>
+</head>
+<body id="body">
+<div id="divone"></div>
+
+<div id="divtwo">
+    <input type="text" />
+    <input type="button" id="pbtn" value="+"/><br>
+
+</div>
+
+
+<script>
+   var h1Element = document.createElement('h1');
+   h1Element.innerHTML ='THis is a heading.';
+   document.getElementById('divone').appendChild(h1Element);
+
+   var pbtn = document.getElementById('pbtn');
+   pbtn.onclick = function () {
+       var inputBox = document.createElement('input');
+       document.getElementById('divtwo').appendChild(inputBox);
+       var Br = document.createElement('br');
+       document.getElementById('divtwo').appendChild(Br);
+
+   }
+
+
+</script>
+</body>
+</html>
